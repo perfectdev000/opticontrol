@@ -1,0 +1,104 @@
+<OptiControl>:
+
+    btn_Pre_Process: btn_Pre_Process
+    btn_Analysis_1: btn_Analysis_1
+    btn_Visualise_1: btn_Visualise_1
+    btn_Analysis_2: btn_Analysis_2
+    btn_Visualise_2: btn_Visualise_2
+    layout_preprocess: layout_preprocess
+    layout_analysis1: layout_analysis1
+    layout_visualise1: layout_visualise1
+    layout_analysis2: layout_analysis2
+    layout_visualise2: layout_visualise2
+
+    GridLayout:
+        cols:2
+        size: root.width, root.height
+
+        GridLayout:
+            cols:1
+            width: 220
+            size_hint_x: None
+            # row_default_height: 40
+            # row_force_default: True
+            # col_default_width: 150
+            # col_force_default: True
+            Image:
+                source: 'logo.png'
+                size_hint_y: None
+                height: 97
+            Button:
+                id: btn_Pre_Process
+                size_hint_y: None
+                height: 50
+                background_color: (0.0, 0.0, 200, 1.0)
+                text:"Pre-Process"
+                on_press: root.click_btn_Pre_Process()
+            Button:
+                id: btn_Analysis_1
+                size_hint_y: None
+                height: 50
+                background_color: (0.0, 0.0, 0.0, 1.0)
+                text:"Analysis 1"
+                on_press: root.click_btn_Analysis_1()
+            Button:
+                id: btn_Visualise_1
+                size_hint_y: None
+                height: 50
+                background_color: (0.0, 0.0, 0.0, 1.0)
+                text:"Visualise 1"
+                on_press: root.click_btn_Visualise_1()
+            Button:
+                id: btn_Analysis_2
+                size_hint_y: None
+                height: 50
+                background_color: (0.0, 0.0, 0.0, 1.0)
+                text:"Analysis 2"
+                on_press: root.click_btn_Analysis_2()
+            Button:
+                id: btn_Visualise_2
+                size_hint_y: None
+                height: 50
+                background_color: (0.0, 0.0, 0.0, 1.0)
+                text:"Visualise 2"
+                on_press: root.click_btn_Visualise_2()
+            Label:
+                background_color: (0.4, 0.4, 0.4, 0.5)
+                text: "Message Status"
+        GridLayout:
+            cols:1
+            GridLayout:
+                cols: 1
+                size_hint_y: None
+                height: root.height
+                id: layout_preprocess
+                Image:
+                    source: 'image_preprocess.jpg'
+            GridLayout:
+                cols: 1
+                size_hint_y: None
+                height: 0
+                id: layout_analysis1
+                Image:
+                    source: 'image_analysis1.jpg'
+            GridLayout:
+                cols: 1
+                size_hint_y: None
+                height: 0
+                id: layout_visualise1
+                Image:
+                    source: 'image_visualise1.jpg'
+            GridLayout:
+                cols: 1
+                size_hint_y: None
+                height: 0
+                id: layout_analysis2
+                Image:
+                    source: 'image_analysis2.jpg'
+            GridLayout:
+                cols: 1
+                size_hint_y: None
+                height: 0
+                id: layout_visualise2
+                Image:
+                    source: 'image_visualise2.jpg'
